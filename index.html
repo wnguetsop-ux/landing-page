@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & PARTAGE SOCIAL (Open Graph) -->
+    <title>Tontine Pour Tous - La gestion de tontine simple et transparente</title>
+    <meta name="description" content="Digitalisez votre tontine : rapports WhatsApp, calculs automatiques et transparence totale. Fini les disputes !">
+    
+    <!-- Balises pour WhatsApp, Facebook, LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="file:///C:/Users/william.ananfack/OneDrive%20-%20Acetum%20SpA/Desktop/tontine-pour-tous/index.html">
+    <meta property="og:title" content="Tontine Pour Tous - Gérez votre tontine sur mobile">
+    <meta property="og:description" content="La solution n°1 pour les présidents de tontines. Rapports WhatsApp instantanés.">
+    <meta property="og:image" content="file:///C:/Users/william.ananfack/OneDrive%20-%20Acetum%20SpA/Desktop/tontine-pour-tous/index.html"> <!-- REMPLACER PAR VOTRE URL D'IMAGE -->
+
+    <!-- Balises pour Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tontine Pour Tous">
+    <meta name="twitter:description" content="Digitalisez votre tontine en un clic.">
+    <meta name="twitter:image" content="https://votre-domaine.com/og-image.jpg">
+
+    <!-- SCRIPT GOOGLE ANALYTICS (GA4) -->
+    <!-- Remplacez G-XXXXXXXXXX par votre ID réel obtenu sur Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus+Jakarta+Sans', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #1a5f7a 0%, #0891b2 100%); }
+        .feature-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .install-step { transition: transform 0.2s; }
+        .install-step:hover { transform: scale(1.02); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-extrabold text-cyan-600">Tontine<span class="text-cyan-800">PourTous</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#progrès" class="text-gray-600 hover:text-cyan-600 px-3 py-2 font-medium">Pourquoi nous ?</a>
+                    <a href="#features" class="text-gray-600 hover:text-cyan-600 px-3 py-2 font-medium">Fonctionnalités</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-cyan-600 px-3 py-2 font-medium">Tarifs</a>
+                    <a href="#faq" class="text-gray-600 hover:text-cyan-600 px-3 py-2 font-medium">FAQ</a>
+                </div>
+                <a href="https://njangihub-miiseeray-ananfack-williams-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-cyan-600 text-white px-5 py-2 rounded-full font-bold hover:bg-cyan-700 transition">Essayer Gratuitement</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-gradient text-white py-16 md:py-24 px-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Gérez votre tontine sans stress,<br>et partagez les rapports en un clic.
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-cyan-100 max-w-3xl mx-auto">
+                La solution digitale complète pour les présidents. Automatisez vos comptes et rassurez vos membres avec des rapports instantanés sur WhatsApp.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://njangihub-miiseeray-ananfack-williams-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-yellow-400 text-cyan-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-lg">
+                    Démarrer ma tontine gratuitement
+                </a>
+                <a href="#pwa" class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition text-sm sm:text-lg">
+                    <i class="fas fa-download mr-2"></i>Comment l'installer ?
+                </a>
+            </div>
+            <div class="mt-12 flex justify-center items-center gap-8 opacity-80 text-sm">
+                <span><i class="fas fa-check-circle mr-2"></i>Rapports PDF & WhatsApp</span>
+                <span><i class="fas fa-check-circle mr-2"></i>Essai 30 jours PRO offert</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION: SHARING FEATURE HIGHLIGHT -->
+    <section class="py-12 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="md:w-1/2">
+                <div class="inline-block bg-cyan-100 text-cyan-700 px-4 py-1 rounded-full text-sm font-bold mb-4">NOUVEAUTÉ</div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Partagez les rapports sur WhatsApp en 1 seconde !</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Fini les membres qui vous appellent pour demander leur solde. Générez un rapport clair et envoyez-le directement dans votre groupe WhatsApp.
+                </p>
+                <div class="flex items-center gap-4 text-green-600 font-bold">
+                    <i class="fab fa-whatsapp text-3xl"></i>
+                    <span>Optimisé pour les groupes WhatsApp</span>
+                </div>
+            </div>
+            <div class="md:w-1/3 bg-gray-50 p-6 rounded-2xl border-2 border-dashed border-cyan-200">
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white italic">T</div>
+                        <div class="text-xs">
+                            <div class="font-bold text-gray-800">Tontine Pour Tous</div>
+                            <div class="text-gray-400">Rapport de réunion</div>
+                        </div>
+                    </div>
+                    <div class="bg-green-50 p-3 rounded-lg text-[10px] text-gray-700 space-y-2">
+                        <p>✅ <strong>Cotisations du 12/01 :</strong></p>
+                        <p>Total encaissé : 500 000 FCFA</p>
+                        <p>Bénéficiaire : Mme Kouassi</p>
+                        <hr class="border-green-100">
+                        <p class="font-bold text-green-700 italic">"Rapport envoyé au groupe WhatsApp"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LE PROBLÈME -->
+    <section id="progrès" class="py-16 px-4">
+        <div class="max-w-7xl mx-auto text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">Fini les casse-têtes traditionnels</h2>
+            <p class="text-gray-600 mt-4">Pourquoi continuer à souffrir avec des méthodes papier ?</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div class="p-6 bg-red-50 rounded-2xl border border-red-100 text-center">
+                <div class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-book-dead text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Cahiers perdus</h3>
+                <p class="text-gray-600 italic text-sm">"On a perdu le cahier lors du déménagement..."</p>
+            </div>
+            <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100 text-center">
+                <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-calculator text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Erreurs de calcul</h3>
+                <p class="text-gray-600 italic text-sm">"Pourquoi le solde ne tombe pas juste ?"</p>
+            </div>
+            <div class="p-6 bg-yellow-50 rounded-2xl border border-yellow-100 text-center">
+                <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-comments-slash text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Disputes</h3>
+                <p class="text-gray-600 italic text-sm">"J'ai déjà payé ma cotisation du mois passé !"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-20 px-4 bg-gray-50 border-y">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Ils nous font confiance</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 italic mb-4">"Depuis que j'utilise l'app, il n'y a plus aucune dispute lors des réunions. Les membres reçoivent leur rapport sur WhatsApp avant même de rentrer chez eux."</p>
+                    <div class="font-bold text-gray-800">— M. Kouamé, Président d'association</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 italic mb-4">"Vivant au Canada, je gère ma tontine familiale à distance très facilement. La transparence est totale pour tout le monde."</p>
+                    <div class="font-bold text-gray-800">— Sarah L., Diaspora Diaspora</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 italic mb-4">"L'installation sans Play Store est géniale. J'ai ajouté l'icône sur mon écran et ça fonctionne comme une vraie application."</p>
+                    <div class="font-bold text-gray-800">— Mme Diallo, Trésorière</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PWA INSTALLATION -->
+    <section id="pwa" class="py-20 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Comment installer l'application ?</h2>
+                <p class="text-gray-600 mt-2 text-lg">Pas besoin de Play Store ou App Store. C'est rapide et gratuit.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Android -->
+                <div class="bg-gray-50 p-8 rounded-[2rem] shadow-sm border border-cyan-100 install-step">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
+                            <i class="fab fa-android text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Sur Android (Chrome)</h3>
+                    </div>
+                    <ol class="space-y-4 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="bg-cyan-600 text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs">1</span>
+                            <span>Ouvrez le lien dans <strong>Chrome</strong>.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="bg-cyan-600 text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs">2</span>
+                            <span>Appuyez sur les <strong>3 petits points</strong> en haut.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="bg-cyan-600 text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs">3</span>
+                            <span>Choisissez <strong>"Installer l'application"</strong>.</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- iPhone -->
+                <div class="bg-gray-50 p-8 rounded-[2rem] shadow-sm border border-cyan-100 install-step">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                            <i class="fab fa-apple text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Sur iPhone (Safari)</h3>
+                    </div>
+                    <ol class="space-y-4 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="bg-cyan-600 text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs">1</span>
+                            <span>Ouvrez le lien dans <strong>Safari</strong>.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="bg-cyan-600 text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs">2</span>
+                            <span>Appuyez sur le bouton <strong>Partager</strong> <i class="fas fa-external-link-alt text-blue-500"></i>.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="bg-cyan-600 text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs">3</span>
+                            <span>Choisissez <strong>"Sur l'écran d'accueil"</strong>.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Questions fréquentes</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">Mes données sont-elles sécurisées ?</h4>
+                    <p class="text-gray-600">Oui. Vos données sont cryptées et sauvegardées quotidiennement sur nos serveurs sécurisés.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">Puis-je changer de devise ?</h4>
+                    <p class="text-gray-600">Absolument. Vous pouvez choisir entre FCFA, Euro ou Dollar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIX -->
+    <section id="pricing" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Un tarif simple et accessible</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Free -->
+                <div class="bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-cyan-200 transition">
+                    <h3 class="font-bold text-2xl mb-2">Version GRATUITE</h3>
+                    <p class="text-gray-500 mb-6">Pour les petits groupes.</p>
+                    <div class="text-4xl font-extrabold mb-6">0 € <span class="text-sm font-normal text-gray-400">/ mois</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li><i class="fas fa-check text-cyan-600 mr-2"></i> Jusqu'à 10 membres</li>
+                        <li><i class="fas fa-check text-cyan-600 mr-2"></i> Gestion des cotisations</li>
+                    </ul>
+                    <a href="https://njangihub-miiseeray-ananfack-williams-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="block text-center border-2 border-cyan-600 text-cyan-600 font-bold py-3 rounded-xl hover:bg-cyan-50 transition">Commencer gratuitement</a>
+                </div>
+                <!-- PRO -->
+                <div class="border-4 border-cyan-600 rounded-3xl p-8 bg-cyan-50 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-cyan-600 text-white px-6 py-1 text-xs font-bold rounded-bl-xl uppercase tracking-tighter">Populaire</div>
+                    <h3 class="font-bold text-2xl mb-2">Version PRO</h3>
+                    <p class="text-gray-500 mb-6">Pour les grandes tontines.</p>
+                    <div class="text-5xl font-extrabold mb-1">1 € <span class="text-sm font-normal text-gray-400">/ mois</span></div>
+                    <p class="text-cyan-700 font-bold mb-6 italic">Essai 30 jours GRATUIT</p>
+                    <ul class="space-y-3 mb-8">
+                        <li><i class="fas fa-check text-cyan-600 mr-2"></i> Membres illimités</li>
+                        <li><i class="fas fa-check text-cyan-600 mr-2"></i> <strong>Rapports WhatsApp Illimités</strong></li>
+                    </ul>
+                    <a href="https://njangihub-miiseeray-ananfack-williams-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="block text-center bg-cyan-600 text-white font-bold py-4 rounded-xl hover:bg-cyan-700 shadow-lg transition text-lg">Passer à la Version PRO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 px-4 bg-white border-t text-center">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-xl font-bold text-cyan-800">Tontine Pour Tous</span>
+            <p class="text-gray-400 text-xs mt-4">© 2024 Tontine Pour Tous. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
