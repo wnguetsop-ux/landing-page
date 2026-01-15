@@ -10,7 +10,7 @@
     <meta property="og:title" content="Tontine Pour Tous">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tontine-pour-tous-pqfl.vercel.app">
-    <meta property="og:image" content="Code_Generated_Image.png">
+    <meta property="og:image" content="app-preview.png">
 
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-13294691853"></script>
@@ -30,6 +30,13 @@
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .hero-gradient { background: linear-gradient(135deg, #1a5f7a 0%, #0891b2 100%); }
+        .phone-frame {
+            border: 8px solid #374151;
+            border-radius: 2.5rem;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            background: #1f2937;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900 antialiased">
@@ -55,29 +62,28 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-gradient text-white py-24 md:py-32 px-4 overflow-hidden">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight">
-                Gérez votre tontine sans stress et sans disputes.
-            </h1>
-            <p class="text-xl md:text-2xl mb-12 text-cyan-50 opacity-90 leading-relaxed">
-                L'outil complet pour les présidents : rapports <strong>instantanés</strong> et lien de consultation sécurisé pour vos membres.
-            </p><div class="mt-12 flex justify-center">
-  <img 
-    src="/app-preview.png"
-    alt="Aperçu de l'application Tontine Pour Tous"
-    class="rounded-2xl shadow-xl w-full max-w-sm md:max-w-md"
-  >
-</div>
-
-
-            <div class="flex flex-col sm:flex-row justify-center gap-5">
-                <a href="https://tontine-pour-tous-pqfl.vercel.app" target="_blank" class="bg-yellow-400 text-cyan-900 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-xl">
-                    Démarrer Gratuitement
-                </a>
-                <a href="#install" class="bg-white/10 backdrop-blur-sm border border-white/20 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white/20 transition text-sm">
-                    Comment l'installer ?
-                </a>
+    <header class="hero-gradient text-white py-16 md:py-24 px-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight">
+                    Gérez votre tontine sans stress et sans disputes.
+                </h1>
+                <p class="text-xl md:text-2xl mb-12 text-cyan-50 opacity-90 leading-relaxed">
+                    L'outil complet pour les présidents : rapports <strong>instantanés</strong> et lien de consultation sécurisé pour vos membres.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-5">
+                    <a href="https://tontine-pour-tous-pqfl.vercel.app" target="_blank" class="bg-yellow-400 text-cyan-900 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-xl">
+                        Démarrer Gratuitement
+                    </a>
+                    <a href="#install" class="bg-white/10 backdrop-blur-sm border border-white/20 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white/20 transition text-sm">
+                        Comment l'installer ?
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center">
+                <div class="phone-frame w-64 md:w-72">
+                    <img src="app-preview.png" alt="[Image de l'aperçu de l'application]" onerror="this.src='https://placehold.co/400x800?text=Aperçu+Application'" class="w-full h-auto">
+                </div>
             </div>
         </div>
     </header>
@@ -308,5 +314,3 @@
 
 </body>
 </html>
-
-
