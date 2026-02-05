@@ -6,10 +6,10 @@
     <title>Tontine Pour Tous - Protégez votre tontine des erreurs et des conflits</title>
     
     <!-- SEO & Partage -->
-    <meta name="description" content="Fini les disputes et les erreurs de caisse. Digitalisez votre tontine, protégez votre réputation et rassurez vos membres avec des rapports transparents.">
+    <meta name="description" content="Fini les disputes et les erreurs de caisse. Digitalisez votre tontine, profitez de statistiques avancées et d'une interface bilingue.">
     <meta property="og:title" content="Tontine Pour Tous - La confiance par le digital">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tontine-pour-tous.vercel.app/">
+    <meta property="og:url" content="https://tontine-app-rho.vercel.app">
     <meta property="og:image" content="app-preview.png">
 
     <!-- Google Analytics (GA4) -->
@@ -37,6 +37,7 @@
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             background: #1f2937;
         }
+        .stat-bar { transition: height 1s ease-in-out; }
     </style>
 </head>
 <body class="bg-white text-gray-900 antialiased">
@@ -50,10 +51,10 @@
                 </div>
                 <div class="hidden md:flex space-x-8 text-sm font-bold">
                     <a href="#quick-start" class="text-gray-600 hover:text-cyan-600 transition">Comment débuter</a>
-                    <a href="#reports" class="text-gray-600 hover:text-cyan-600 transition">Rapports</a>
-                    <a href="#pricing" class="text-gray-600 hover:text-cyan-600 transition">Tarifs</a>
+                    <a href="#reports" class="text-gray-600 hover:text-cyan-600 transition">Rapports & Stats</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-cyan-600 transition">Témoignages</a>
                 </div>
-                <a href="https://tontine-pour-tous.vercel.app/" target="_blank" class="bg-cyan-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-cyan-700 transition shadow-md text-xs sm:text-sm">
+                <a href="https://tontine-app-rho.vercel.app" target="_blank" class="bg-cyan-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-cyan-700 transition shadow-md text-xs sm:text-sm">
                     Créer ma tontine gratuitement
                 </a>
             </div>
@@ -64,22 +65,22 @@
     <header class="hero-gradient text-white py-16 md:py-24 px-4 overflow-hidden">
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 text-center lg:text-left">
             <div class="lg:w-1/2">
-                <div class="inline-block bg-yellow-400 text-cyan-900 px-4 py-1 rounded-full text-xs font-bold mb-6 uppercase tracking-widest">Zéro arnaque • 100% Sécurisé</div>
-                <h1 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight">
-                    Protégez votre tontine des erreurs et des disputes.
+                <div class="flex flex-wrap justify-center lg:justify-start gap-2 mb-6">
+                    <span class="bg-yellow-400 text-cyan-900 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">100% Sécurisé</span>
+                    <span class="bg-cyan-700 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">🇫🇷 Français / 🇺🇸 English</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight text-center md:text-left">
+                    Protégez votre tontine des erreurs et des conflits.
                 </h1>
-                <p class="text-xl md:text-2xl mb-12 text-cyan-50 opacity-90 leading-relaxed">
-                    Fini les accusations et les trous dans la caisse. Automatisez vos comptes, sécurisez votre réputation de président et rassurez vos membres avec des bilans partagés sur WhatsApp.
+                <p class="text-xl md:text-2xl mb-12 text-cyan-50 opacity-90 leading-relaxed text-center md:text-left">
+                    Fini les accusations et les erreurs de caisse. Automatisez vos comptes, suivez vos <strong>statistiques</strong> et rassurez vos membres avec des bilans bilingues.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-5">
-                    <a href="https://tontine-pour-tous.vercel.app/" target="_blank" class="bg-yellow-400 text-cyan-900 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-xl">
+                    <a href="https://tontine-app-rho.vercel.app" target="_blank" class="bg-yellow-400 text-cyan-900 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-xl">
                         Démarrer en 30 secondes
                     </a>
-                    <a href="#problem" class="bg-white/10 backdrop-blur-sm border border-white/20 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white/20 transition text-sm flex items-center justify-center">
-                        Pourquoi nous choisir ?
-                    </a>
                 </div>
-                <p class="mt-6 text-sm text-cyan-200 italic"><i class="fas fa-check-circle mr-2"></i> Essai gratuit sans engagement • Pas de frais cachés</p>
+                <p class="mt-6 text-sm text-cyan-200 italic text-center md:text-left"><i class="fas fa-check-circle mr-2"></i> Essai gratuit sans engagement • Interface Bilingue</p>
             </div>
             <div class="lg:w-1/2 flex justify-center">
                 <div class="phone-frame w-64 md:w-72">
@@ -93,87 +94,82 @@
     <section id="quick-start" class="py-24 px-4 bg-white border-b border-gray-100 text-center">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight text-center">Lancez votre séance en 3 étapes simples.</h2>
-            <p class="text-gray-500 text-xl mb-16 max-w-2xl mx-auto">Gérez votre groupe comme un pro, sans stress.</p>
+            <p class="text-gray-500 text-xl mb-16 max-w-2xl mx-auto">Gérez votre groupe comme un pro, en français ou en anglais.</p>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
                 <div class="relative p-8 rounded-3xl bg-gray-50 border border-gray-100 shadow-sm transition hover:shadow-md text-center">
                     <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-cyan-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">1</div>
                     <div class="text-cyan-600 text-4xl mb-4"><i class="fas fa-id-card-alt"></i></div>
                     <h3 class="text-xl font-bold mb-3 text-cyan-900">Créez votre compte</h3>
-                    <p class="text-gray-600 text-sm">Inscrivez-vous gratuitement pour ouvrir votre tontine digitale sécurisée.</p>
+                    <p class="text-gray-600 text-sm">Inscrivez-vous en 30 secondes pour ouvrir votre espace sécurisé.</p>
                 </div>
                 <div class="relative p-8 rounded-3xl bg-gray-50 border border-gray-100 shadow-sm transition hover:shadow-md text-center">
                     <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-cyan-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">2</div>
                     <div class="text-cyan-600 text-4xl mb-4"><i class="fas fa-users-cog"></i></div>
                     <h3 class="text-xl font-bold mb-3 text-cyan-900">Ajoutez vos membres</h3>
-                    <p class="text-gray-600 text-sm">Enregistrez vos participants. L'application gère les soldes de chacun automatiquement.</p>
+                    <p class="text-gray-600 text-sm">Enregistrez vos participants. L'app calcule les soldes pour vous.</p>
                 </div>
                 <div class="relative p-8 rounded-3xl bg-gray-50 border border-gray-100 shadow-sm transition hover:shadow-md text-center">
                     <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-cyan-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">3</div>
-                    <div class="text-cyan-600 text-4xl mb-4"><i class="fas fa-whatsapp-square"></i></div>
-                    <h3 class="text-xl font-bold mb-3 text-cyan-900">Fixez & Partagez</h3>
-                    <p class="text-gray-600 text-sm">Lancez la séance, encaissez les cotisations et envoyez le bilan par WhatsApp.</p>
+                    <div class="text-cyan-600 text-4xl mb-4"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-cyan-900">Suivez & Analysez</h3>
+                    <p class="text-gray-600 text-sm">Visualisez la croissance de votre fonds avec des graphiques bilingues.</p>
                 </div>
-            </div>
-            <div class="mt-12">
-                <a href="https://tontine-pour-tous.vercel.app/" class="bg-cyan-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-cyan-700 transition inline-block">
-                    Commencer en 30 secondes
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- SECTION: RAPPORTS & PARTAGE -->
+    <!-- SECTION: RAPPORTS & STATISTIQUES -->
     <section id="reports" class="py-24 px-4 bg-gray-50 border-b border-gray-100">
         <div class="max-w-7xl mx-auto text-center md:text-left">
             <div class="flex flex-col md:flex-row items-center gap-16">
-                <div class="md:w-1/2">
-                    <div class="inline-block bg-white text-cyan-700 px-4 py-1 rounded-full text-sm font-bold mb-6 border border-cyan-100">FINI LES PALABRES</div>
-                    <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Des rapports clairs, prêts à être partagés.</h2>
+                <div class="md:w-1/2 text-left">
+                    <div class="inline-block bg-white text-cyan-700 px-4 py-1 rounded-full text-sm font-bold mb-6 border border-cyan-100 uppercase">Statistiques & Transparence</div>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Suivez l'évolution de votre caisse en direct.</h2>
                     <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                        Ne laissez plus personne douter de votre honnêteté. L'application génère un <strong>rapport complet</strong> après chaque séance. Tout est transparent.
+                        Ne vous contentez pas de chiffres. L'application transforme vos données en <strong>graphiques clairs</strong> pour une compréhension immédiate de la santé financière du groupe.
                     </p>
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex-shrink-0 flex items-center justify-center text-xl">
-                                <i class="fab fa-whatsapp"></i>
+                            <div class="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-2xl flex-shrink-0 flex items-center justify-center text-xl">
+                                <i class="fas fa-chart-bar"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-900 text-left">Preuve WhatsApp</h4>
-                                <p class="text-gray-500 text-sm text-left">Envoyez le bilan détaillé directement dans le groupe WhatsApp des membres.</p>
+                                <h4 class="font-bold text-gray-900">Tableau de Bord Visuel</h4>
+                                <p class="text-gray-500 text-sm">Visualisez les cotisations mensuelles et les remboursements de prêts.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex-shrink-0 flex items-center justify-center text-xl">
-                                <i class="fas fa-check-circle"></i>
+                            <div class="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex-shrink-0 flex items-center justify-center text-xl">
+                                <i class="fas fa-language"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-900 text-left">Données Incontestables</h4>
-                                <p class="text-gray-500 text-sm text-left">Chaque versement est enregistré avec date et heure. Zéro contestation possible.</p>
+                                <h4 class="font-bold text-gray-900">Interface Bilingue</h4>
+                                <p class="text-gray-500 text-sm">Passez du Français à l'Anglais en un clic pour vos rapports.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-10">
-                        <a href="https://tontine-pour-tous.vercel.app/" class="inline-block border-2 border-cyan-600 text-cyan-600 px-6 py-3 rounded-xl font-bold hover:bg-cyan-50 transition">
-                            Essayer sans engagement
-                        </a>
-                    </div>
                 </div>
-                <!-- Visuel Rapport -->
-                <div class="md:w-1/2 bg-white p-6 rounded-[2rem] border border-gray-200 shadow-2xl">
-                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
-                        <div class="flex justify-between items-center mb-6 text-xs font-bold uppercase tracking-widest text-center">
-                            <span class="text-cyan-600">Bilan de Séance Officiel</span>
-                            <span class="text-gray-400">À jour</span>
+                <!-- Visuel Statistiques -->
+                <div class="md:w-1/2 bg-white p-8 rounded-[2rem] border border-gray-200 shadow-2xl">
+                    <div class="bg-white p-6 rounded-xl">
+                        <div class="flex justify-between items-center mb-8">
+                            <div>
+                                <h4 class="font-bold text-gray-800">Caisse Mensuelle</h4>
+                                <p class="text-[10px] text-gray-400 uppercase tracking-widest">Monthly Statistics</p>
+                            </div>
+                            <span class="text-green-500 font-bold">+24%</span>
                         </div>
-                        <div class="space-y-4 font-mono text-sm text-gray-700">
-                            <p class="font-bold border-b pb-2">TONTINE POUR TOUS - RAPPORT</p>
-                            <p>✅ Total perçu : 850 000 FCFA</p>
-                            <p>💰 Bénéficiaire : M. Jean Kouassi</p>
-                            <p>📉 Caisse totale : 2 450 000 FCFA</p>
+                        <div class="flex items-end justify-between h-40 gap-2 mb-4">
+                            <div class="bg-cyan-100 w-full rounded-t-lg stat-bar" style="height: 30%"></div>
+                            <div class="bg-cyan-200 w-full rounded-t-lg stat-bar" style="height: 45%"></div>
+                            <div class="bg-cyan-300 w-full rounded-t-lg stat-bar" style="height: 60%"></div>
+                            <div class="bg-cyan-400 w-full rounded-t-lg stat-bar" style="height: 50%"></div>
+                            <div class="bg-cyan-500 w-full rounded-t-lg stat-bar" style="height: 80%"></div>
+                            <div class="bg-cyan-600 w-full rounded-t-lg stat-bar" style="height: 95%"></div>
                         </div>
-                        <div class="mt-8 flex gap-3">
-                            <div class="flex-1 bg-green-500 text-white text-center py-2 rounded-lg text-xs font-bold shadow-sm cursor-pointer hover:bg-green-600"><i class="fab fa-whatsapp mr-1"></i> Partager aux membres</div>
+                        <div class="flex justify-between text-[10px] text-gray-400 font-bold">
+                            <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
                         </div>
                     </div>
                 </div>
@@ -181,38 +177,39 @@
         </div>
     </section>
 
-    <!-- SECTION: FINI LES CASSE-TÊTES -->
-    <section id="problem" class="py-24 px-4 bg-white border-b border-gray-100 text-center">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Pourquoi passer au digital ?</h2>
-            <p class="text-gray-500 text-lg mb-12 max-w-2xl mx-auto italic">"Un cahier peut se perdre, une erreur peut arriver, mais les accusations font mal."</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-16">
-                <div class="bg-red-50 p-10 rounded-[2.5rem] border border-red-100">
-                    <div class="w-14 h-14 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
-                        <i class="fas fa-exclamation-triangle"></i>
+    <!-- SECTION: ILS PARLENT DE NOUS (TÉMOIGNAGES) -->
+    <section id="testimonials" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-16 italic">Ils parlent de nous</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-gray-50 p-8 rounded-[2.5rem] border border-gray-100 shadow-sm">
+                    <div class="flex text-yellow-400 mb-6 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed">"Le partage du rapport bilingue sur WhatsApp a tout changé. Les membres adorent recevoir leur reçu digital instantanément."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600 font-bold uppercase text-xs">MK</div>
+                        <div class="font-bold text-gray-800 text-sm">— M. Kouamé, Président</div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-red-800">Fini les accusations</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed">Évitez les membres qui disent "j'avais déjà payé". Tout est écrit et daté dans votre téléphone.</p>
                 </div>
-                <div class="bg-orange-50 p-10 rounded-[2.5rem] border border-orange-100">
-                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
-                        <i class="fas fa-calculator"></i>
+                <div class="bg-gray-50 p-8 rounded-[2.5rem] border border-gray-100 shadow-sm">
+                    <div class="flex text-yellow-400 mb-6 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed">"Vivant au Canada, je gère ma tontine familiale à distance. Les statistiques m'aident à voir la croissance de nos fonds."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600 font-bold uppercase text-xs">SL</div>
+                        <div class="font-bold text-gray-800 text-sm">— Sarah L., Diaspora</div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-orange-800">Zéro trou de caisse</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed">L'application calcule les intérêts et les fonds de caisse sans erreur. Vous dormez l'esprit tranquille.</p>
                 </div>
-                <div class="bg-cyan-50 p-10 rounded-[2.5rem] border border-cyan-100">
-                    <div class="w-14 h-14 bg-cyan-100 text-cyan-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="bg-gray-50 p-8 rounded-[2.5rem] border border-gray-100 shadow-sm">
+                    <div class="flex text-yellow-400 mb-6 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 italic mb-8 leading-relaxed">"Simple et puissant. Chaque membre sait exactement où en sont ses cotisations grâce aux bilans clairs."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600 font-bold uppercase text-xs">DD</div>
+                        <div class="font-bold text-gray-800 text-sm">— Mme Diallo, Trésorière</div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-cyan-800">Réputation protégée</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed">Montrez à votre communauté que vous êtes un président moderne, honnête et organisé.</p>
                 </div>
             </div>
-            <div class="mt-16">
-                <a href="https://tontine-pour-tous.vercel.app/" class="bg-yellow-400 text-cyan-900 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-yellow-300 transition shadow-lg">
-                    Créer ma tontine gratuitement
+            <div class="mt-12">
+                <a href="https://tontine-app-rho.vercel.app" class="bg-cyan-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-cyan-700 transition inline-block">
+                    Rejoindre les présidents satisfaits
                 </a>
             </div>
         </div>
@@ -224,32 +221,32 @@
             <h2 class="text-4xl font-extrabold mb-12 text-gray-900 leading-tight">Une offre simple et honnête</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <!-- Plan Gratuit -->
-                <div class="bg-white border-2 border-gray-100 rounded-[3rem] p-12 hover:border-cyan-300 transition-all flex flex-col shadow-sm">
-                    <h3 class="text-xl font-bold text-gray-400 uppercase mb-4 tracking-widest text-sm">Pour débuter</h3>
-                    <div class="text-5xl font-black mb-8 text-gray-800">Gratuit</div>
-                    <ul class="text-left space-y-4 mb-10 text-gray-600 text-sm italic flex-grow">
+                <div class="bg-white border-2 border-gray-100 rounded-[3rem] p-12 hover:border-cyan-300 transition-all flex flex-col shadow-sm text-left">
+                    <h3 class="text-xl font-bold text-gray-400 uppercase mb-4 tracking-widest text-sm text-center">Pour débuter</h3>
+                    <div class="text-5xl font-black mb-8 text-gray-800 text-center">Gratuit</div>
+                    <ul class="space-y-4 mb-10 text-gray-600 text-sm italic flex-grow">
                         <li class="flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Jusqu'à <strong>5 membres</strong></li>
-                        <li class="flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Rapports de base</li>
-                        <li class="flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Gestion des cotisations</li>
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Graphiques de base</li>
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Français / Anglais</li>
                     </ul>
-                    <a href="https://tontine-pour-tous.vercel.app/" target="_blank" class="block bg-gray-100 text-gray-800 py-4 rounded-2xl font-bold hover:bg-gray-200 transition text-sm">Essayer maintenant</a>
+                    <a href="https://tontine-app-rho.vercel.app" target="_blank" class="block bg-gray-100 text-gray-800 py-4 rounded-2xl font-bold hover:bg-gray-200 transition text-sm text-center uppercase tracking-widest">Démarrer</a>
                 </div>
                 <!-- Plan Pro -->
-                <div class="bg-cyan-50 border-4 border-cyan-600 rounded-[3rem] p-12 relative shadow-xl flex flex-col">
+                <div class="bg-cyan-50 border-4 border-cyan-600 rounded-[3rem] p-12 relative shadow-xl flex flex-col text-left">
                     <div class="absolute top-0 right-0 bg-cyan-600 text-white px-8 py-2 text-xs font-bold rounded-bl-3xl uppercase">Illimité</div>
-                    <h3 class="text-xl font-bold text-cyan-800 uppercase mb-4 tracking-widest text-sm">Version Pro</h3>
-                    <div class="text-5xl font-black mb-2 text-cyan-900">1 € <span class="text-base font-normal text-gray-500">/ mois</span></div>
-                    <p class="text-cyan-600 font-bold mb-8 italic text-xs">30 jours d'essai gratuits offerts</p>
-                    <ul class="text-left space-y-4 mb-10 text-gray-700 text-sm italic font-medium flex-grow">
+                    <h3 class="text-xl font-bold text-cyan-800 uppercase mb-4 tracking-widest text-sm text-center">Version Pro</h3>
+                    <div class="text-5xl font-black mb-2 text-cyan-900 text-center">1 € <span class="text-base font-normal text-gray-500">/ mois</span></div>
+                    <p class="text-cyan-600 font-bold mb-8 italic text-xs text-center">Statistiques complètes incluses</p>
+                    <ul class="space-y-4 mb-10 text-gray-700 text-sm italic font-medium flex-grow">
                         <li class="flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> <strong>Membres illimités</strong></li>
+                        <li class="flex items-center"><i class="fas fa-chart-pie text-cyan-600 mr-2"></i> Statistiques détaillées</li>
                         <li class="flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Rapports WhatsApp illimités</li>
-                        <li class="flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Impression de rapports PDF</li>
-                        <li class="flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Support VIP WhatsApp 24/7</li>
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-600 mr-2"></i> Support VIP 24/7</li>
                     </ul>
-                    <a href="https://tontine-pour-tous.vercel.app/" target="_blank" class="block bg-cyan-600 text-white py-4 rounded-2xl font-bold hover:bg-cyan-700 shadow-xl transition transform hover:scale-105 text-sm">Passer en Illimité</a>
+                    <a href="https://tontine-app-rho.vercel.app" target="_blank" class="block bg-cyan-600 text-white py-4 rounded-2xl font-bold hover:bg-cyan-700 shadow-xl transition transform hover:scale-105 text-sm text-center uppercase tracking-widest">Passer en Illimité</a>
                 </div>
             </div>
-            <p class="mt-12 text-sm text-gray-400">Aucune carte bancaire requise pour l'essai gratuit. Annulez quand vous voulez.</p>
+            <p class="mt-12 text-sm text-gray-400 text-center">Pas de frais cachés. Annulez quand vous voulez.</p>
         </div>
     </section>
 
@@ -264,9 +261,9 @@
 
     <!-- Pied de page -->
     <footer class="py-12 bg-gray-50 text-center border-t">
-        <span class="text-xl font-extrabold text-cyan-600 italic">Tontine<span class="text-cyan-800">PourTous</span></span>
+        <span class="text-xl font-extrabold text-cyan-600 italic uppercase">Tontine<span class="text-cyan-800">PourTous</span></span>
         <p class="text-gray-400 text-xs mt-6">© 2024 Tontine Pour Tous. La transparence au service de la communauté.</p>
-        <p class="text-[10px] text-gray-400 mt-2">Données hébergées en Europe • 100% Confidentiel</p>
+        <p class="text-[10px] text-gray-400 mt-2 tracking-widest uppercase">Sécurité Maximale • FR/EN</p>
     </footer>
 
 </body>
